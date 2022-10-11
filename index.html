@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/icons8-equalizer-others-96.png">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="dropdown" id="btn-div">
+            <div class="left-nav">
+                <button class="btn" onClick="newArray(); setActive()">New Array</button>
+                <div class="slider-div">
+                    <span>Animation Speed</span>
+                    <input type="range" min="10" max="100" value="50" class="slider" id="speed">
+                </div>
+            </div>
+            <div class="right-nav">
+                <button class="btn" onClick="play('bubble')">Bubble Sort</button>
+                <button class="btn" onClick="play('insertion')">Insertion Sort</button>
+                <button class="btn" onClick="play('selection')">Selection Sort</button>
+                <button class="btn" onClick="play('merge')">Merge Sort</button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div id="container"></div>
+    </div>
+    <footer class="footer">
+        <p class="details" id="details"></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="algorithms/bubbleSort.js"></script>
+    <script src="algorithms/insertionSort.js"></script>
+    <script src="algorithms/selectionSort.js"></script>
+    <script src="algorithms/mergeSort.js"></script>
+
+</body>
+</html>
